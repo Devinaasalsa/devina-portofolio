@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body{
+    text-align: center;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: #9b7d65fa;
+    border-bottom: 3px solid rgb(209, 192, 169) ;
+    z-index: 99999;
+}
+
+.header .judul {
+    font-family: 'Handlee', cursive;
+    font-size: 50px;
+    color: rgb(107, 68, 18);
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.header ul a:hover {
+    background-color: var(--warnabeige);
+}
+
+.header {
+    margin-top: 20px;
+    padding: 15px;
+    padding-bottom: 10px;
+    background-color: rgb(207, 195, 155);
+}
+
+.container{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px auto;
+    position: relative;
+    background-image: linear-gradient(rgb(190, 165, 126),rgb(173, 143, 102));
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 60px;
+    transition: .3s;
+}
+
+img:hover {
+    box-shadow: 0px 70px 10px -40px rgba(128, 99, 99, 0.5);
+    transform: translateX(0px) translateY(-10px);
+}
+
+.kotak #halo {
+    font-size: 22px;
+    color: rgb(107, 68, 18);
+}
+
+h1 {
+    color: rgb(107, 68, 18);
+}
+
+
+.kotak {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 50px;
+    background-color: #9b7d65fa;
+    margin: 60px 200px;
+    transition: .4s;
+    /* animasi */
+    position: relative;
+    animation-name: geser;
+    animation-duration: 2s;  
+    animation-fill-mode: both;  
+}
+
+@keyframes geser {
+    from {right: 1200px;}
+    to {right: 0px}
+}
+
+.kotak:hover {
+    box-shadow: 0px 70px 10px -40px rgba(128, 99, 99, 0.5);
+    transform: scale(1.05);
+}
+
+.baris {
+    display: flex;
+    justify-content: center;
+}
+
+.kotak li {
+    font-size: 20px;
+    color: rgb(139, 58, 29);
+    list-style-type: none;
+}
+
+.kotak p {
+    color: var(--warnabeige);
+    line-height: 25px;
+}
+
+.kotak #tabel {
+    background-color: #9b7d65fa;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.kotak table {
+    border: var(--warnabeige); 
+}
+
+.kotak table td {
+    color: var(--warnabeige);
+}
+
+a {
+    color: rgb(139, 58, 29);
+    text-decoration: none;
+}
+
+a:hover {
+    color: burlywood;
+    
+}
+
+.footer {
+    background-color:#333;
+    padding: 10px;
+}
+
+
+.footer .copy {
+    color: var(--warnabeige);
+    text-align: center;
+    font-size: 14px;
+
+}
+
+:root {
+    --warnabeige : beige;
+}
